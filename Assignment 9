@@ -1,0 +1,71 @@
+#Q1
+class Circle():
+    def __init__(self, radius):
+        self.radius = radius
+    def getArea(self):
+        print("Area of circle:")
+        a= 3.14 * self.radius * self.radius
+        print(a)
+    def getCircumference(self):
+        print("Circumference of circle")
+        b = self.radius * 2 * 3.14
+        print(b)
+b=Circle(6)
+b.getArea()
+b.getCircumference()
+print('\n')
+#Q2
+class Student():
+    def __init__(self, name, roll):
+        self.n = name
+        self.rn = roll
+    def display(self):
+         self.n
+         self.rn
+x=Student('Harman preet',65)
+print("Name of student is:",x.n)
+print("Roll number of student is:",x.rn)
+print('\n')
+#Q3
+class Temprature():
+    def __init__(self, celsius):
+        self.temp=celsius
+    def fahrenhiet(self):
+        return 9/5*self.temp+32
+    def celsius(self):
+        return self.temp
+z=Temprature(40.5)
+print("fahrenhiet to celsius is:",z.fahrenhiet())
+print("celsius to fahrenhiet is:",z.celsius())
+print('\n')
+#Q4
+class Movie_Details():
+    def __init__(self,movie_name,artist_name,year_of_release,rating):
+        self.n=movie_name
+        self.an=artist_name
+        self.y=year_of_release
+        self.r=rating
+    def display(self):
+        print('Movie name: ',q.n)
+        print('Artist name: ',q.an)
+        print('year of release: ',q.y)
+        print('ratting: ',q.r)
+q=Movie_Details('3 Iditios','Amir',2008,6)
+#update function
+print("updated data is")
+q.n="Race3"
+q.an="salman khan"
+q.y=2018
+q.r=4
+q.display()
+print('\n')
+#Q5
+class Expenditure():
+    def __init__(self,expenditure,saving):
+        self.ex=expenditure
+        self.s=saving
+    def total_salary(self):
+        return self.ex+self.s
+i=Expenditure(35000,25000)
+print("Expenditure is:",i.ex)
+print("saving is:",i.s)
